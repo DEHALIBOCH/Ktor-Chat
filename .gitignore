@@ -4,8 +4,6 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-src/main/kotlin/kz/dehaliboch/data/database/DatabaseConstants.kt
-
 ### STS ###
 .apt_generated
 .classpath
@@ -36,3 +34,5 @@ out/
 
 ### VS Code ###
 .vscode/
+
+src/main/kotlin/kz/dehaliboch/data/database/DatabaseConstants.kt
