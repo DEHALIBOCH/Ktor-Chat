@@ -34,5 +34,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-src/main/kotlin/kz/dehaliboch/data/database/DatabaseConstants.kt
