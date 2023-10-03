@@ -1,6 +1,7 @@
 package kz.dehaliboch
 
 import io.ktor.server.application.*
+import kz.dehaliboch.common.DatabaseHelper.configureDatabaseVariables
 import kz.dehaliboch.plugins.*
 
 fun main(args: Array<String>) {
@@ -13,4 +14,5 @@ fun Application.module() {
     configureMonitoring()
     configureSecurity()
     configureRouting()
+    configureDatabaseVariables()
 }
