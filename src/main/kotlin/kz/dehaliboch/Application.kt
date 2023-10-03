@@ -1,7 +1,6 @@
 package kz.dehaliboch
 
 import io.ktor.server.application.*
-import io.ktor.server.application.*
 import kz.dehaliboch.common.DatabaseHelper.configureDatabaseVariables
 import kz.dehaliboch.di.mainModule
 import kz.dehaliboch.plugins.*
@@ -15,10 +14,10 @@ fun Application.module() {
     install(Koin) {
         modules(mainModule)
     }
-    configureSockets()
     configureSerialization()
+    configureDatabaseVariables()
+    configureSockets()
+    configureRouting()
     configureMonitoring()
     configureSecurity()
-    configureRouting()
-    configureDatabaseVariables()
 }
